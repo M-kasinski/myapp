@@ -2,11 +2,11 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :nom %>
-    <%= f.input :prenom %>
-    <%= f.input :tel %>
-    <%= f.input :ville %>
-    <%= f.input :cp %>
+    <%= f.input :nom, input_html: { class: 'special' }%>
+    <%= f.input :prenom, input_html: { class: 'special' } %>
+    <%= f.input :tel, input_html: { class: 'special' }%>
+    <%= f.input :ville, input_html: { class: 'special' } %>
+    <%= f.input :cp,input_html: { class: 'special' } %>
   </div>
 
   <div class="form-actions">

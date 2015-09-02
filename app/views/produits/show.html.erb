@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @produit.nom %>
+</p>
+
+<p>
+  <strong>Marque:</strong>
+  <%= @produit.marque %>
+</p>
+
+<p>
+  <strong>Prix ha:</strong>
+  <%= @produit.prix_ha %>
+</p>
+
+<p>
+  <strong>Remise:</strong>
+  <%= @produit.remise %>
+</p>
+
+<p>
+  <strong>Coef:</strong>
+  <%= @produit.coef %>
+</p>
+
+<p>
+  <strong>Prix:</strong>
+  <%= @produit.prix %>
+</p>
+
+<p>
+  <strong>Justif remise:</strong>
+  <%= @produit.justif_remise %>
+</p>
+
+<p>
+  <strong>Date remise:</strong>
+  <%= @produit.date_remise %>
+</p>
+
+<p>
+  <strong>Categorie:</strong>
+  <%= @produit.categorie %>
+</p>
+
+<p>
+  <strong>Saison:</strong>
+  <%= @produit.saison %>
+</p>
+
+<p>
+  <strong>Annee s:</strong>
+  <%= @produit.annee_s %>
+</p>
+
+<%= link_to 'Edit', edit_produit_path(@produit) %> |
+<%= link_to 'Back', produits_path %>

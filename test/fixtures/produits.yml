@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  marque: MyString
+  prix_ha: 9.99
+  remise: 9.99
+  coef: 9.99
+  prix: 9.99
+  justif_remise: MyString
+  date_remise: 2015-09-02 14:20:50
+  categorie: MyString
+  saison: MyString
+  annee_s: 1
+
+two:
+  nom: MyString
+  marque: MyString
+  prix_ha: 9.99
+  remise: 9.99
+  coef: 9.99
+  prix: 9.99
+  justif_remise: MyString
+  date_remise: 2015-09-02 14:20:50
+  categorie: MyString
+  saison: MyString
+  annee_s: 1

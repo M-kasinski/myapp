@@ -1,0 +1,21 @@
+<%= simple_form_for(@produit) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nom %>
+    <%= f.input :marque %>
+    <%= f.input :prix_ha %>
+    <%= f.input :remise %>
+    <%= f.input :coef %>
+    <%= f.input :prix %>
+    <%= f.input :justif_remise %>
+    <%= f.input :date_remise %>
+    <%= f.input :categorie %>
+    <%= f.input :saison %>
+    <%= f.input :annee_s %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

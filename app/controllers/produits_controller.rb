@@ -1,6 +1,7 @@
 class ProduitsController < ApplicationController
   before_action :set_produit, only: [:show, :edit, :update, :destroy]
 
+
   # GET /produits
   # GET /produits.json
   def index
@@ -10,6 +11,9 @@ class ProduitsController < ApplicationController
   # GET /produits/1
   # GET /produits/1.json
   def show
+  
+    @details = Proddetail.where(id_produit: params[:id])
+
   end
 
   # GET /produits/new
@@ -66,6 +70,8 @@ class ProduitsController < ApplicationController
     def set_produit
       @produit = Produit.find(params[:id])
     end
+
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def produit_params

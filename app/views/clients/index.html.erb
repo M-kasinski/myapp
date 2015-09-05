@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Clients</h1>
+<h1>Listing Clients <%= link_to 'New Client', new_client_path, class: "btn btn-primary btn_ruby" %></h1>
 
 <table class='table table-bordered'>
   <thead>
@@ -32,7 +32,7 @@
 
 <br>
 
-<%= link_to 'New Client', new_client_path, class: "btn btn-primary btn_ruby" %>
+
 
 
 <a class="btn btn-primary" id= "test" data-toggle="modal" href='#modal-id'>New client en jS</a>

@@ -5,7 +5,7 @@ class CreateProddetails < ActiveRecord::Migration
       t.string :pointure
       t.integer :gencode
       t.integer :stock
-      t.string :id_produit
+      t.integer :id_produit
       t.string :details
 
       t.timestamps null: false

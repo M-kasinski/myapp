@@ -1,13 +1,16 @@
-class ClientsController < ApplicationController
+class ClientsController < AdminsController
   before_action :set_client, only: [:show, :edit, :update, :destroy]
 
   # GET /clients
   # GET /clients.json
   def index
-    @clients = Client.all
+    
     @client = Client.new
+    @q = Client.ransack(params[:q])
+    @clients = @q.result(distinct: true)
 
   end
+
 
   # GET /clients/1
   # GET /clients/1.json
